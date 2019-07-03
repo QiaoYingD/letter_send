@@ -19,8 +19,7 @@ public class IndexController {
 
     @RequestMapping("sendSms")
     @ResponseBody
-    public String sendSms() {
-        String phoneNumbers="17633720773";
+    public String sendSms(String phoneNumbers) {
         String code = AlyLetter.randomCode();
         System.out.println(code);
         try {
